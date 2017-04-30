@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.informacion p {
+    display: inline;
+}
+
+.informacion, .datos-representante, .datos-entidad, .informacion-estrategica {
+    color: #707274;
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
+
+.informacion {
+    top: 55px;
+
+}
+
+.informacion>span {
+    color: red;
+}
+
+.informacion>p :first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.datos-representante {
+    top: 80px;
+    height: 460px;
+
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #707274;
+    display: block;
+    width: 300px;
+    margin: 14px 0;
+    outline: 0px;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+input[type='number'] {
+    width: 84px;
+    border: solid 1px #707274;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    display: inline-block;
+    margin-left: auto;
+    margin: 0;
+}
+
+label[for='profesion'] {
+    margin-top: 35px;
+}
+
+label[for='cargo'] {
+    margin-top: 104px;
+}
+
+ .derecha {
+    left: 50%;
+}
+
+.izquierda, .derecha {
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    width: 50%;
+}
+
+.datos-entidad {
+  top: 100px;
+  height: 1010px;
+
+}
+
+.izquierda {
+    left: 0;
+    top: 55px;
+}
+
+.derecha {
+    top: 55px;
+}
+
+label[for='regiones'] {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+label[for='otros'] {
+    margin-top: 25px;
+}
+
+label[for='inscrito'] {
+    margin-top: 527px;
+}
+
+.derecha p {
+    margin-top: 20px;
+}
+
+.informacion-estrategica {
+    top: 160px;
+  }
+
+.datos-entidad >div :first-child {
+  margin-top: 13px;
+}
+ .entidad .derecha {
+  top: -184px;
+left: 50%;
+position: absolute;
+}
+.entidad .izquierda {
+ top: -184px;
+ position: absolute;
+
+}
+.entidad {
+    top: 10px;
+    position: relative;
+}

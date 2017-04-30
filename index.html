@@ -1,12 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="informacion">
+        <p>Antes de iniciar la inscription debes leer las </p>
+        <span>bases del concurso</span><br><br>
+        <p>
+            <span>Nota:</span>
+            <p>Al finalizar el formulario encontraras el icono GUARDAR, el cual te permitira que puedas guardar la informacion ingresada si no culminaste el formulario, dantote la posibilidad de entrar cuando necesites concretar y/o editar antes de elegir
+                el icono ENVIAR
+            </p>
+        </p>
+    </section>
+
+    <section class="datos-representante">
+        <h2>Formulario de Registro</h2>
+        <div class="izquierda">
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" id="Apellidos" value="">
+            <label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
+            <input type="text" id="nacimiento" value="">
+            <label for="region">Recion de Nacimiento</label>
+            <select class="" name="">
+                  <option value="">Amazonas</option>
+                  <option value="">Áncash</option>
+                  <option value="">Apurímac</option>
+                  <option value="">Arequipa</option>
+                  <option value="">Ayacucho</option>
+                  <option value="">Cajamarca</option>
+                  <option value="">Callao</option>
+                  <option value="">Cuszo</option>
+                  <option value="">Huancavelica</option>
+                  <option value="">Huánuco</option>
+                  <option value="">Ica</option>
+                  <option value="">Junín</option>
+                  <option value=""> La Libertad</option>
+                  <option value="">Lambayeque</option>
+                  <option value="">Lima</option>
+                  <option value="">Loreto</option>
+                  <option value="">Madre de Dios</option>
+                  <option value="">Moquegua</option>
+                  <option value=""> Pasco</option>
+                  <option value="">Piura</option>
+                  <option value="">Puno</option>
+                  <option value="">San Martín</option>
+                  <option value="">  Tacna </option>
+                  <option value="">Tumbes</option>
+                  <option value="">Ucayali </option>
+          </select>
+            <label for="sexo">Sexo</label>
+            <input type="checkbox">Masculino <br>
+            <input type="checkbox">Femenino <br>
+            <label for="profesion">Profesion</label>
+            <input type="text" name="" value="">
+            <label for="">Tiempo en la organizacion en cantidad de meses</label>
+            <input type="text" name="" value="">
+        </div>
+
+
+        <div class="derecha">
+            <label for="nombres">Nombres</label>
+            <input type="text">
+            <label for="edad">Edad</label>
+            <input type="number" name="quantity" min="1" max="5">
+            <label for="residencia">Region de residencia</label>
+            <select class="" name="">
+          <option value="">Amazonas</option>
+              <option value="">Áncash</option>
+              <option value="">Apurímac</option>
+              <option value="">Arequipa</option>
+              <option value="">Ayacucho</option>
+              <option value="">Cajamarca</option>
+              <option value="">Callao</option>
+              <option value="">Cuszo</option>
+              <option value="">Huancavelica</option>
+              <option value="">Huánuco</option>
+              <option value="">Ica</option>
+              <option value="">Junín</option>
+              <option value=""> La Libertad</option>
+              <option value="">Lambayeque</option>
+              <option value="">Lima</option>
+              <option value="">Loreto</option>
+              <option value="">Madre de Dios</option>
+              <option value="">Moquegua</option>
+              <option value=""> Pasco</option>
+              <option value="">Piura</option>
+              <option value="">Puno</option>
+              <option value="">San Martín</option>
+              <option value="">  Tacna </option>
+              <option value="">Tumbes</option>
+              <option value="">Ucayali </option>
+  </select>
+
+            <label for="cargo">Cargo de la organizacion</label>
+            <input type="text" name="" value="">
+            <label for="tiempo">Tiempo en dicho cargo en cantidad de meses</label>
+            <input type="text" name="" value="">
+
+        </div>
+    </section>
+    <section class="datos-entidad">
+        <h2>Datos de la Entidad Postulante</h2>
+        <div class="izquierda">
+            <label for="entidad">Nombre de la Entidad</label>
+            <input type="text" name="" value="">
+            <label for="operacion">Cuando comenzaron a operar ?</label>
+            <input type="text" name="" value="">
+            <label for="tipo-organizacion">Tipo de Organizacion</label>
+            <select name="">
+          <option value="">ONG</option>
+          <option value="">Fundaciones</option>
+          <option value="">Asociacion Civil</option>
+          <option value="">Empresa</option>
+          <option value="">Persona Natural</option>
+          <option value="">Otros</option>
+        </select>
+
+            <label for="otros">Otros</label>
+            <input type="text" name="" value="">
+            <label for="inscrito">Esta inscrito en Registros Publicos</label>
+            <input type="checkbox" name="" value="">Si <br>
+            <input type="checkbox" name="" value="">No
+        </div>
+        <div class="derecha">
+            <p>Ambito de Intervencion</p>
+            <p>Cuales son las regiones , provincias y distritos donde se situan sus operaciones a lo largo de toda la cadena de negocio ?</p>
+            <label for="regiones">Regiones</label>
+            <input type="checkbox" name="" value="">Amazonas <br>
+            <input type="checkbox" name="" value="">Ancash <br>
+            <input type="checkbox" name="" value="">Apurimac <br>
+            <input type="checkbox" name="" value="">Arequipa <br>
+            <input type="checkbox" name="" value="">Ayacucho <br>
+            <input type="checkbox" name="" value="">Cajamarca <br>
+            <input type="checkbox" name="" value="">Callao <br>
+            <input type="checkbox" name="" value="">Cuzco <br>
+            <input type="checkbox" name="" value="">Huancavelica <br>
+            <input type="checkbox" name="" value="">Huanuco <br>
+            <input type="checkbox" name="" value="">Ica <br>
+            <input type="checkbox" name="" value="">Junin <br>
+            <input type="checkbox" name="" value="">La Libertad <br>
+            <input type="checkbox" name="" value="">Lambayeque <br>
+            <input type="checkbox" name="" value="">Lima <br>
+            <input type="checkbox" name="" value="">Loreto <br>
+            <input type="checkbox" name="" value="">Madre de Dios <br>
+            <input type="checkbox" name="" value="">Moquegua <br>
+            <input type="checkbox" name="" value="">Pasco <br>
+            <input type="checkbox" name="" value="">Piura <br>
+            <input type="checkbox" name="" value="">Puno <br>
+            <input type="checkbox" name="" value="">San Martin <br>
+            <input type="checkbox" name="" value="">Tacna <br>
+            <input type="checkbox" name="" value="">Tumbes <br>
+            <input type="checkbox" name="" value="">Ucayali <br>
+            <p>Indicar las provincias en las que interviene tu emprendimiento respecto a las provincias marcadas anteriormente</p>
+            <label for="provincia">Provincia</label>
+            <input type="text" name="" value="">
+            <label for="distrito">Distrito</label>
+            <input type="text" name="" value="">
+            <p>Si responde "Si", llena las siguientes opciones</p>
+            <label for="RUC">RUC</label>
+            <input type="text" name="" value="">
+            <label for="contitucion">Cuando se constituyeron? (dd/mm/yyyy)</label>
+            <input type="text" name="" value="">
+
+
+        </div>
+    </section>
+    <section class="informacion-estrategica">
+        <h2>Informacion estrategica de la entidad postulante</h2>
+        <p>Esta informacion es confidencial y no sera publica en ninguna etapa del proceso de evaluacion</p>
+        <label for="">Cual es el sector de la problematica social que busca resolver su Organizacion (Puede ser mas de una)</label>
+        <input type="checkbox">Genero <br>
+        <input type="checkbox">Educacion <br>
+        <input type="checkbox">Inclusion Social <br>
+        <input type="checkbox">Medio Ambiente <br>
+        <input type="checkbox">Salud <br>
+        <input type="checkbox">Institucionalidad <br>
+        <input type="checkbox">Turismo <br>
+        <input type="checkbox">Cultura <br>
+        <input type="checkbox">Arte <br>
+        <input type="checkbox">Diseño <br>
+        <input type="checkbox">Gastronomia <br>
+        <input type="checkbox">Valores <br>
+        <input type="checkbox">Deporte <br>
+        <input type="checkbox">Transporte <br>
+
+        <h3>Conocimiento sobre el entorno y la problematica</h3>
+        <p>Describa el principal problema social que busca resolver su organizacion</p>
+        <p>Recomendamos usar datos precisos y evidencia citando estudios, investigaciones , publicaciones, etc del problema que plantea (Maximo 80 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+
+        <label for="publico">Cual es el publico objetivo directo o indirecto (Maximo 20 palabra)</label>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Claridad sobre la propuesta de valor</h3>
+        <p>Enuncie como su organizacion aporta a la solucion del problema y que beneficios concretos ofrece a sus publico objetivo (Maximo 60 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Detalle como funciona su organizacion considerando toda la cadena del negocio</h3>
+        <p>Ejemplo</p>
+        <p>"Mi modelo consiste en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesania elaborada a base de plasticos .Luego las contrato por 4 horas diarias de trabajo para elaborar productos . Empezamos la venta on-line de productos.
+            Cuando completamos el capital de 3mil soles de utilidad por artesania pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de ese momento el 25% de las ventas de sus productos se
+            reinvierten en nuestra organizacion para sostenerla y convocar a una nueva promocion de recicladoras"</p>
+        <p>Efectividad del modelo (Maximo 100 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Detalle la cualidad de los servicios o productos que ofrece y como destacan en el mercado</h3>
+        <p>En base al ejemplo anterior "Mi organizacion ofrece el servicio de capacitacion a recicladoras con un metodo efectivo que las prepara en solo 3 meses. Tambien ofrezco artesania hecha a base de plastico que se distingue por usar diseños contemporaneos
+            en empaques tambien reusables"</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Como se mide el impacto social de su iniciativa ?</h3>
+        <p>Describa el mecanismo , los 2 principales indicadores y la medicion actual de los mismos</p>
+        <p>Impacto Social (Maximo 100 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Exponga como su organizacion innova, que procesos y elementos de su modelo son diferentes y competivos en el mercado</h3>
+        <p>Innovacion (Maximo 100 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Recursos humanos</h3>
+        <p>Pueden indicar "0" si no tienen una cantidad </p>
+        <div class="izquierda entidad">
+            <label for="gente">Cuanta gente se encarga de dirigir y gestionar la iniciativa?</label>
+            <input type="text" name="" value="">
+            <label for="cantidad">Cantidad de Remunerados a tiempo completo</label>
+            <input type="text" name="" value="">
+            <label for="otro1">Otro</label>
+            <input type="text" name="" value="">
+        </div>
+        <div class="derecha entidad">
+            <label for="cantidad-remunerado">Cantidad de Remunerados a tiempo parcial</label>
+            <input type="text" name="" value="">
+            <label for="cantidad-talento">Cantidad de Talento Voluntario</label>
+            <input type="text" name="" value="">
+            <label for="otro2">Si llenas Otros ingresa la cantidad</label>
+            <input type="text" name="" value="">
+        </div>
+        <h3>Aliados estrategicos</h3>
+        <p>Cuales son las organizaciones aliadas de su proyecto y como se vinculan a su modelo ? (separar los aliados por una coma ",")</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Seleccione una o mas opciones que describan como esta financiado su organizacion</h3>
+
+        <div class="izquierda">
+            <h4>Fuente de Financiamiento</h4>
+            <input type="checkbox" name="" value="">He ganado uno o varios grants y/o capitales semilla <br>
+            <input type="checkbox" name="" value="">Cuento con inversionistas privados <br>
+            <input type="checkbox" name="" value="">Hago campañas de Crowdfunding <br>
+            <input type="checkbox" name="" value="">He sido o estoy siendo incubado por una organizacion <br>
+            <input type="checkbox" name="" value="">Una parte o todo es por la venta de mis productos o servicios <br>
+            <input type="checkbox" name="" value="">Otros <br>
+            <label for="Otras-fuentes"> Otras fuentes de Financiamiento</label>
+            <input type="text" name="" value="">
+        </div>
+        <div class="derecha">
+            <h4>Fondos administrados durante el año 2014</h4>
+            <input type="checkbox" name="" value="">
+            <=S/. 100,000 <br>
+                <input type="checkbox" name="" value=""> S/. 100,001 - 200,000 <br>
+                <input type="checkbox" name="" value=""> S/. 200,001 - 300,000 <br>
+                <input type="checkbox" name="" value=""> S/. 300,001 - 400,000 <br>
+                <input type="checkbox" name="" value=""> S/. 400,001 - 500,000 <br>
+                <input type="checkbox" name="" value=""> >= S/. 500,000 <br>
+                <label for="monto"> Monto Exacto S/.</label>
+        </div>
+        <p>La organizacion ha sido premiada antes , dentro o fuera de Peru ? Si la respuesta es si . Por que ?</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <h3>Sobre el futuro de la organizacion postulante</h3>
+        <p>Cual es el principal desafio que debe afrontar para alcanzar el proposito que persigue su iniciativa y como lo resolvera ? (Maximo 100 palabras)</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <p>Como considera que el apoyo integral de Kunan podra ayudar a superar sus desafios y crecer ? (Maximo 100 palabras)</p>
+        <h3>Informacion complementaria</h3>
+        <div class="izquierda">
+            <label for="web">Pagina web(link)</label>
+            <input type="text" name="" value="">
+            <label for="Fanpage">Fanpage(link)</label>
+            <input type="text" name="" value="">
+            <label for="twiter">Twiter</label>
+            <input type="text" name="" value="">
+            <label for="fijo">Telefono Fijo</label>
+            <input type="text" name="" value="">
+            <label for="celular">Telefono Celular</label>
+            <input type="text" name="" value="">
+            <label for="correo">Correo Electronico</label>
+            <input type="text" name="" value="">
+        </div>
+        <div class="derecha">
+            <p>Obligatorio al menos 1 foto </p>
+            <label for="iniciativa">Fotos de su iniciativa</label>
+            <input type="file" name="" value="">
+            <input type="file" name="" value="">
+            <input type="file" name="" value="">
+            <label for="convocatoria">Por que medio te enteraste de la convocatoria</label>
+            <input type="checkbox" name="" value="">Amigo <br>
+            <input type="checkbox" name="" value="">Web <br>
+            <input type="checkbox" name="" value="">Redes Sociales <br>
+            <input type="checkbox" name="" value="">Radio / Tv <br>
+            <input type="checkbox" name="" value="">Periodico / Revista <br>
+            <input type="checkbox" name="" value=""> Charla <br>
+            <input type="checkbox" name="" value="">Organizacion <br>
+            <input type="checkbox" name="" value="">Universidad / Instituto <br>
+            <input type="checkbox" name="" value=""> Otro <br>
+
+            <label for="medios"></label>
+            <input type="text" name="" value="">
+        </div>
+        <h4> Sube tu video a youtube de dos minutos y de produccion simple en el que respondas a las siguientes preguntas :</h4>
+        <ul>
+            <li> Cual es el sueño que quieres hacer realidad con tu iniciativa ?</li>
+            <li> Cual es el principal desafio del modelo de tu emprendimiento ?</li>
+            <li> De que manera el premio Kunan puede ayudarte a superar ese desafio ?</li>
+        </ul>
+        <label for="video"></label>
+        <input type="text" name="" value="" placeholder="video">
+        <p> 1* El video debe tener acceso publico en el canal de Youtube.</p>
+        <p> 2* El rotulo del video debe ser "Nombre del emprendimiento/Premio Kunan 2015."</p>
+        <p> 3* Este video sera publico en una de las etapas de la seleccion.</p>
+        <p> 4* La edicion y Formato , no seran parte del criterio de evaluacion.</p>
+        <p> 5* El excedente a los 2 minutos no sera visto</p>
+        <h3>Declaracion Jurada</h3>
+        <p> Por medio del presente formulario declaro a titulo profesional y en representacion de la organizacion que represento ante este Premio, que con toda la informacion proporcionada para el Premio Kunan, es oficial, cierta y fidedigna. En tal sentido,
+            autorizo a los organizadores del Premio para que en cualquier etapa del mismo extiendan cualquier consulta acerca de la informacion proveida y/o realicen la accion que estimen conveniente para la correcta verificacion de los datos y antecendentes
+            presentados. De presumirse de manera suficiente o se compruebe la falsedad y/o inexactitud de la informacion proveida por parte de nuestra Organizacion y/o de su representante oficial ante el Premio, se aceptamos que se procesa a la desacilifacion
+            inmediata y ala anulacion total de la postulacion presentada. Dejamos expresa constancia que conocemos , respetamos y aceptamos las Bases y lineamientos del Premio Kunan organizado por Telefonica del Peru y Global Shapers Lima Hub.</p>
+        <p>Acepto la declaracion</p>
+        <input type="checkbox" name="" value="">
+        <h3>Enviar la postulacion para su revision</h3>
+        <p>He llenado todos los campos del formulario y quiero enviarla para concretar la postilacion con exito. <span> Recuerda: Al marcar este campo tu postulacion no podra ser editada nuevamente</span></p>
+        <p>Quiero enviar mi aplicacion</p>
+        <input type="checkbox" name="" value="">
+        <input type="submit" name="" value="Enviar">
+        <p>Encuentra informacion en el <span>glosario de terminos</span></p>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li>Kunan</li>
+                <li>Premio</li>
+                <li>Comunidad</li>
+                <li>Komunicacion</li>
+            </ul>
+            <div>
+                <span>face</span>
+                <span>instagram</span>
+                <span>twiter</span>
+                <span>youtube</span>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/app.js">
+    </script>
 </body>
+
 </html>
