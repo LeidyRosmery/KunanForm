@@ -21,17 +21,17 @@
             </p>
         </p>
     </section>
-
+<form class="" action="index.html" method="post">
     <section class="datos-representante">
         <h2>Formulario de Registro</h2>
         <h3>Datos del representante de la Entidad Postulante</h3>
         <div class="izquierda">
             <label for="Apellidos">Apellidos</label>
-            <input type="text" id="Apellidos" value="">
+            <input type="text" id="Apellidos" pattern="([A-Z]{1}[a-z]+\s+[A-Z]{1}[a-z]+|[A-Z]{1}[a-z]+)" >
             <label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
-            <input type="text" id="nacimiento" value="">
-            <label for="region">Recion de Nacimiento</label>
-            <select class="" name="">
+            <input type="text" id="nacimiento" value="" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])[/](0[1-9]|1[012])[/]([1-9]{4})">
+            <label for="region">Region de Nacimiento</label>
+            <select class="" name="" required="">
                   <option value="">Amazonas</option>
                   <option value="">Áncash</option>
                   <option value="">Apurímac</option>
@@ -335,6 +335,8 @@
         <p id="glosario">Encuentra informacion en el <span>glosario de terminos</span></p>
     </section>
 
+
+</form>
     <footer class="pie">
         <p> Siguenos</p>
         <h4> Kunan</h4>
