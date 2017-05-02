@@ -27,9 +27,9 @@
         <h3>Datos del representante de la Entidad Postulante</h3>
         <div class="izquierda">
             <label for="Apellidos">Apellidos</label>
-            <input type="text" id="Apellidos"  pattern="">
+            <input type="text" id="Apellidos"  pattern="" required="" >
             <label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
-            <input type="text" id="nacimiento" value="" >
+            <input type="text" id="nacimiento" value="" required=""  >
             <label for="region">Region de Nacimiento</label>
             <select class=""  name="" required="" >
                   <option value="">Amazonas</option>
@@ -59,20 +59,20 @@
                   <option value="">Ucayali </option>
           </select>
             <label for="sexo">Sexo</label>
-            <input type="radio" name="sexo">Masculino <br>
+            <input type="radio" name="sexo" >Masculino <br>
             <input type="radio" name="sexo">Femenino <br>
             <label for="profesion">Profesion</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
             <label for="">Tiempo en la organizacion en cantidad de meses</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
         </div>
         <div class="derecha">
             <label for="nombres">Nombres</label>
             <input type="text" required="" pattern="([A-Z]){1}[a-z]+[\s]([A-Z]){1}[a-z]+">
             <label for="edad">Edad</label>
-            <input type="number" name="quantity" min="1" max="5">
+            <input type="number" required=""  name="quantity" min="1" max="5">
             <label for="residencia">Region de residencia</label>
-            <select class="" name="">
+            <select class="" name="" required="" >
                 <option value="">Amazonas</option>
                 <option value="">Áncash</option>
                 <option value="">Apurímac</option>
@@ -100,20 +100,20 @@
                 <option value="">Ucayali </option>
             </select>
             <label for="cargo">Cargo de la organizacion</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
             <label for="tiempo">Tiempo en dicho cargo en cantidad de meses</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
         </div>
     </section>
     <section class="datos-entidad">
         <h3>Datos de la Entidad Postulante</h3>
         <div class="izquierda entidad">
             <label for="entidad">Nombre de la Entidad</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
             <label for="operacion">Cuando comenzaron a operar ?</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
             <label for="tipo-organizacion">Tipo de Organizacion</label>
-            <select name="">
+            <select name="" required="" >
           <option value="">ONG</option>
           <option value="">Fundaciones</option>
           <option value="">Asociacion Civil</option>
@@ -123,7 +123,7 @@
         </select>
 
             <label for="otros">Otros</label>
-            <input type="text" name="" value="">
+            <input type="text" name="" value="" required="" >
             <label for="inscrito">Esta inscrito en Registros Publicos</label>
             <input type="radio" name="decide" value="">Si <br>
             <input type="radio" name="decide" value="">No
@@ -194,25 +194,25 @@
         <label>Describa el principal problema social que busca resolver su organizacion</label>
         <p>Recomendamos usar datos precisos y evidencia citando estudios, investigaciones , publicaciones, etc del problema que plantea </p>
       <p>(Maximo 80 palabras)</p>
-        <textarea name="name" rows="8" cols="80"></textarea>
+        <textarea name="name" rows="8" cols="80" required="" ></textarea>
 
         <label for="publico">Cual es el publico objetivo directo o indirecto (Maximo 20 palabra)</label>
-        <textarea name="name" rows="8" cols="80"></textarea>
+        <textarea name="name" rows="8" cols="80" required="" ></textarea>
         <h3>Claridad sobre la propuesta de valor</h3>
         <label>Enuncie como su organizacion aporta a la solucion del problema y que beneficios concretos ofrece a sus publico objetivo (Maximo 60 palabras)</label>
-        <textarea name="name" rows="8" cols="80"></textarea>
+        <textarea name="name" rows="8" cols="80" required="" ></textarea>
         <h3>Detalle como funciona su organizacion considerando toda la cadena del negocio</h3>
         <p>Ejemplo</p>
         <p>"Mi modelo consiste en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesania elaborada a base de plasticos .Luego las contrato por 4 horas diarias de trabajo para elaborar productos . Empezamos la venta on-line de productos.
             Cuando completamos el capital de 3mil soles de utilidad por artesania pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de ese momento el 25% de las ventas de sus productos se
             reinvierten en nuestra organizacion para sostenerla y convocar a una nueva promocion de recicladoras"</p>
         <label>Efectividad del modelo (Maximo 100 palabras)</label>
-        <textarea name="name" rows="8" cols="80"></textarea>
+        <textarea name="name" rows="8" cols="80" required="" ></textarea>
         <h3>Detalle la cualidad de los servicios o productos que ofrece y como destacan en el mercado</h3>
         <p>En base al ejemplo anterior "Mi organizacion ofrece el servicio de capacitacion a recicladoras con un metodo efectivo que las prepara en solo 3 meses. Tambien ofrezco artesania hecha a base de plastico que se distingue por usar diseños contemporaneos
             en empaques tambien reusables"</p>
         <label for="">Calidad de Servicio y/o Producto (Maximo 60 palabras)</label>
-        <textarea name="name" rows="8" cols="80"></textarea>
+        <textarea name="name" rows="8" cols="80" required="" ></textarea>
         <h3>Como se mide el impacto social de su iniciativa ?</h3>
         <p>Describa el mecanismo , los 2 principales indicadores y la medicion actual de los mismos</p>
         <label>Impacto Social (Maximo 100 palabras)</label>
