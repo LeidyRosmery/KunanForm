@@ -27,7 +27,7 @@
         <h3>Datos del representante de la Entidad Postulante</h3>
         <div class="izquierda">
             <label for="Apellidos">Apellidos</label>
-            <input type="text" id="Apellidos"  >
+            <input type="text" id="Apellidos"  pattern="">
             <label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
             <input type="text" id="nacimiento" value="" >
             <label for="region">Region de Nacimiento</label>
@@ -68,7 +68,7 @@
         </div>
         <div class="derecha">
             <label for="nombres">Nombres</label>
-            <input type="text">
+            <input type="text" required="" pattern="([A-Z]){1}[a-z]+[\s]([A-Z]){1}[a-z]+">
             <label for="edad">Edad</label>
             <input type="number" name="quantity" min="1" max="5">
             <label for="residencia">Region de residencia</label>
@@ -332,9 +332,9 @@
         <h3>Enviar la postulacion para su revision</h3>
         <p>He llenado todos los campos del formulario y quiero enviarla para concretar la postilacion con exito. <span> Recuerda: Al marcar este campo tu postulacion no podra ser editada nuevamente</span></p>
         <p>Quiero enviar mi aplicacion</p>
-        <input type="checkbox" name="" value="">
-        <input type="submit" name="" id="Guardar">
-        <p id="glosario">Encuentra informacion en el <span>glosario de terminos</span></p>
+        <input type="checkbox" name="" value="" id="enviar">
+        <input type="submit" name="" id="Guardar" value="Guardar">
+              <p id="glosario">Encuentra informacion en el <span>glosario de terminos</span></p>
     </section>
 
 

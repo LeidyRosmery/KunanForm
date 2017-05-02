@@ -1,7 +1,14 @@
 var input=document.getElementsByTagName("input");
 var guardar=document.getElementById("Guardar");
+document.getElementById("enviar").addEventListener("change",function(){
+   guardar.value="Enviar";
+});
+
+
 guardar.addEventListener('click',function(e){
-event.preventDefault() ;
+
+
+
 
 var expNombre=/([A-Z]){1}[a-z]+[\s]([A-Z]){1}[a-z]+/;
 var expNombre1=/([A-Z]){1}[a-z]+/;
