@@ -7,9 +7,29 @@
     line-height: 24px;
     font-size: 14px;
 }
-
+.ruc {
+  display: none;
+  color:green;
+}
 p, label, span, li, input {
     font-size: 14px;
+}
+
+input[type="radio"]{
+  appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #c8c6c6;
+      width: 18px;
+      margin: 0;
+      display: inline-flex;
+      height: 13px;
+      /* margin-left: 15px; */
+      border-radius: 2px;
+}
+
+:checked{
+ background: #707274;
 }
 
 .informacion p {
@@ -87,7 +107,7 @@ label[for='profesion'] {
 }
 
 label[for='cargo'] {
-    margin-top: 126px;
+    margin-top: 122px;
 }
 
 .izquierda, .derecha {
@@ -124,7 +144,7 @@ label[for='otros'] {
 }
 
 label[for='inscrito'] {
-    margin-top: 474px;
+    margin-top: 651px;
 }
 
 .derecha p {
@@ -132,7 +152,7 @@ label[for='inscrito'] {
 }
 
 .informacion-estrategica {
-    top: 70px;
+    top: -7px;
 }
 
 .datos-entidad>div :first-child {
@@ -149,8 +169,10 @@ label[for='inscrito'] {
     position: absolute;
     display: inline-block;
     left: 50%;
-    bottom: 2743px;
+    bottom: 2889px;
+
 }
+
 
 .financiamiento-izquierda {
     width: 50%;
@@ -161,8 +183,9 @@ label[for='inscrito'] {
     position: absolute;
     display: inline-block;
     left: 50%;
-    top: 3197px;
+    top: 3178px;
 }
+
 
 .complementaria-izquierda {
     width: 50%;
@@ -175,7 +198,7 @@ label[for='inscrito'] {
     display: inline-block;
     left: 50%;
     width: 50%;
-    top: 4132px;
+    top: 4264px;
 }
 
 textarea {
@@ -226,7 +249,7 @@ footer {
     margin-top: 35px;
 }
 
-input[value='Guardar'] {
+input[id='Guardar'] {
     background: orange;
     width: 90px;
     color: #fff;
@@ -286,4 +309,18 @@ h3+ul {
     position: absolute;
     left: 20%;
     top: 23%;
+}
+
+input[type="checkbox"]{
+ appearance: none;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ border: 1px solid #c8c6c6;
+ width: 20px;
+ height: 15px;
+ border-radius: 2px;
+margin: 0 5px 0 0;
+}
+input[type="checkbox"]:checked{
+ background:  #707274;
 }

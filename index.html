@@ -27,11 +27,11 @@
         <h3>Datos del representante de la Entidad Postulante</h3>
         <div class="izquierda">
             <label for="Apellidos">Apellidos</label>
-            <input type="text" id="Apellidos" pattern="([A-Z]{1}[a-z]+\s+[A-Z]{1}[a-z]+|[A-Z]{1}[a-z]+)" >
+            <input type="text" id="Apellidos"  >
             <label for="nacimiento">Fecha de Nacimiento (dd/mm/yyyy)</label>
-            <input type="text" id="nacimiento" value="" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])[/](0[1-9]|1[012])[/]([1-9]{4})">
+            <input type="text" id="nacimiento" value="" >
             <label for="region">Region de Nacimiento</label>
-            <select class="" name="" required="">
+            <select class=""  name="" >
                   <option value="">Amazonas</option>
                   <option value="">Áncash</option>
                   <option value="">Apurímac</option>
@@ -59,8 +59,8 @@
                   <option value="">Ucayali </option>
           </select>
             <label for="sexo">Sexo</label>
-            <input type="checkbox" name="sexo">Masculino <br>
-            <input type="checkbox" name="sexo">Femenino <br>
+            <input type="radio" name="sexo">Masculino <br>
+            <input type="radio" name="sexo">Femenino <br>
             <label for="profesion">Profesion</label>
             <input type="text" name="" value="">
             <label for="">Tiempo en la organizacion en cantidad de meses</label>
@@ -125,8 +125,8 @@
             <label for="otros">Otros</label>
             <input type="text" name="" value="">
             <label for="inscrito">Esta inscrito en Registros Publicos</label>
-            <input type="checkbox"  value="">Si <br>
-            <input type="checkbox"  value="">No
+            <input type="radio" name="decide" value="">Si <br>
+            <input type="radio" name="decide" value="">No
         </div>
         <div class="derecha entidad">
             <p>Ambito de Intervencion</p>
@@ -162,11 +162,11 @@
             <input type="text" name="" value="">
             <label for="distrito">Distrito</label>
             <input type="text" name="" value="">
-            <p>Si responde "Si", llena las siguientes opciones</p>
-            <label for="RUC">RUC</label>
-            <input type="text" name="" value="">
-            <label for="contitucion">Cuando se constituyeron? (dd/mm/yyyy)</label>
-            <input type="text" name="" value="">
+            <p class="ruc" >Si responde "Si", llena las siguientes opciones</p>
+            <label class="ruc" for="RUC">RUC</label>
+            <input class="ruc" type="text" name="" value="">
+            <label class="ruc" for="contitucion">Cuando se constituyeron? (dd/mm/yyyy)</label>
+            <input class="ruc" type="text" name="" value="">
 
 
         </div>
@@ -192,7 +192,8 @@
 
         <h3>Conocimiento sobre el entorno y la problematica</h3>
         <label>Describa el principal problema social que busca resolver su organizacion</label>
-        <p>Recomendamos usar datos precisos y evidencia citando estudios, investigaciones , publicaciones, etc del problema que plantea (Maximo 80 palabras)</p>
+        <p>Recomendamos usar datos precisos y evidencia citando estudios, investigaciones , publicaciones, etc del problema que plantea </p>
+      <p>(Maximo 80 palabras)</p>
         <textarea name="name" rows="8" cols="80"></textarea>
 
         <label for="publico">Cual es el publico objetivo directo o indirecto (Maximo 20 palabra)</label>
@@ -234,8 +235,8 @@
             <input type="text" name="" value="">
             <label for="cantidad-talento">Cantidad de Talento Voluntario</label>
             <input type="text" name="" value="">
-            <label for="otro2">Si llenas Otros ingresa la cantidad</label>
-            <input type="text" name="" value="">
+            <label for="otro2" class="otro-cantidad">Si llenas Otros ingresa la cantidad</label>
+            <input type="text" class="otro-cantidad" name="" value="">
         </div>
         <h3>Aliados estrategicos</h3>
         <label>Cuales son las organizaciones aliadas de su proyecto y como se vinculan a su modelo ? (separar los aliados por una coma ",")</label>
@@ -256,13 +257,13 @@
         </div>
         <div class="financiamiento-derecha">
             <h4>Fondos administrados durante el año 2014</h4>
-            <input type="checkbox" name="" value="">
+            <input type="radio" name="fondos" value="">
             <=S/. 100,000 <br>
-                <input type="checkbox" name="" value=""> S/. 100,001 - 200,000 <br>
-                <input type="checkbox" name="" value=""> S/. 200,001 - 300,000 <br>
-                <input type="checkbox" name="" value=""> S/. 300,001 - 400,000 <br>
-                <input type="checkbox" name="" value=""> S/. 400,001 - 500,000 <br>
-                <input type="checkbox" name="" value=""> >= S/. 500,000 <br>
+                <input type="radio" name="fondos" value=""> S/. 100,001 - 200,000 <br>
+                <input type="radio" name="fondos" value=""> S/. 200,001 - 300,000 <br>
+                <input type="radio" name="fondos" value=""> S/. 300,001 - 400,000 <br>
+                <input type="radio" name="fondos" value=""> S/. 400,001 - 500,000 <br>
+                <input type="radio" name="fondos" value=""> >= S/. 500,000 <br>
                 <label for="monto"> Monto Exacto S/.</label>
                 <input type="text" name="" value="">
         </div>
@@ -272,6 +273,7 @@
         <label>Cual es el principal desafio que debe afrontar para alcanzar el proposito que persigue su iniciativa  ? (Maximo 100 palabras)</label>
         <textarea name="name" rows="8" cols="80"></textarea>
         <label>Como considera que el apoyo integral de Kunan podra ayudar a superar sus desafios y crecer ? (Maximo 100 palabras)</label>
+<textarea name="name" rows="8" cols="80"></textarea>
         <h2>Informacion complementaria</h2>
         <div class="complementaria-izquierda">
             <label for="web">Pagina web(link)</label>
@@ -331,7 +333,7 @@
         <p>He llenado todos los campos del formulario y quiero enviarla para concretar la postilacion con exito. <span> Recuerda: Al marcar este campo tu postulacion no podra ser editada nuevamente</span></p>
         <p>Quiero enviar mi aplicacion</p>
         <input type="checkbox" name="" value="">
-        <input type="submit" name="" value="Guardar">
+        <input type="submit" name="" id="Guardar">
         <p id="glosario">Encuentra informacion en el <span>glosario de terminos</span></p>
     </section>
 

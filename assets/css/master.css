@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header img{
+width: 70px;
+height: 100px;
+}
+header{
+  position: relative;
+}
+div{
+  display: inline-block;
+  position: absolute;
+}
+a{
+        text-decoration: none;
+        font: 600 20px 'Open Sans Condensed', sans-serif;
+      color: #2A3133;
+      border-right: 1px solid #2A3133;
+      position: relative;
+      font-size: 15px;
+      top: -2px;
+      margin-right: -5px;
+      padding: 2px 9px;
+}
+
+.enlaces{
+  top: 42px;
+left: 338px;
+}
+.imagen{
+  top: 0;
+      left: 214px;
+}
